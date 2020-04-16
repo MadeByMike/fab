@@ -22,13 +22,27 @@ export const deployBoth: FabDeployer<ConfigTypes.CFWorkers> = async (
   package_path: string,
   config: ConfigTypes.CFWorkers,
   env_overrides: FabSettings
-) => notImplemented()
+) => {
+  /* TODO:
+       • create/update KV store namespace
+       • upload assets to KV
+       • package the server to point at it
+       • do the deploy
+       • bind the script to the namespace
+  */
+
+  notImplemented()
+}
 
 export const deployAssets: FabAssetsDeployer<ConfigTypes.CFWorkers> = async (
   fab_path: string,
   package_path: string,
   config: ConfigTypes.CFWorkers
-) => notImplemented()
+) => {
+  /* I don't think this will actually be possible? You can't use KV store without
+   *  also using workers? */
+  notImplemented()
+}
 
 export const deployServer: FabServerDeployer<ConfigTypes.CFWorkers> = async (
   fab_path: string,

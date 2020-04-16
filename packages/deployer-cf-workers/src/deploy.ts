@@ -31,7 +31,7 @@ export const deployBoth: FabDeployer<ConfigTypes.CFWorkers> = async (
        • bind the script to the namespace
   */
 
-  notImplemented()
+  return notImplemented()
 }
 
 export const deployAssets: FabAssetsDeployer<ConfigTypes.CFWorkers> = async (
@@ -41,7 +41,7 @@ export const deployAssets: FabAssetsDeployer<ConfigTypes.CFWorkers> = async (
 ) => {
   /* I don't think this will actually be possible? You can't use KV store without
    *  also using workers? */
-  notImplemented()
+  return notImplemented()
 }
 
 export const deployServer: FabServerDeployer<ConfigTypes.CFWorkers> = async (
